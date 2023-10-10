@@ -9,7 +9,6 @@ function App() {
     <div className="App">
       <div className="app_items">
         <Home />
-    
       </div>
     </div>
   );

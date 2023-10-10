@@ -6,7 +6,13 @@
 
 .container {
   max-width: 1220px;
-  /* border: 1px solid red; */
   padding: 0px 10px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 546px;
+    padding: 0px 35px;
+  }
 }
