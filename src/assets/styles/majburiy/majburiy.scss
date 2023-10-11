@@ -172,6 +172,72 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .majburiy {
+    .majburiy_items {
+      .majbury_items_header {
+        header {
+          .header_items {
+            .header_items_logo {
+              img {
+              }
+            }
+
+            .header_item_navbar {
+              .navbar {
+                gap: 8px;
+                ul {
+                  gap: 0px;
+                  li {
+                    .anchor {
+                      font-size: 13px;
+                    }
+                  }
+                }
+
+                .login {
+                  .login_btn {
+                    padding: 6px 8px;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    transition: all 0.3s ease-in-out;
+                  }
+                  .login_btn:hover {
+                    transition: all 0.3s ease-in-out;
+                    background: #005440;
+                  }
+                }
+
+                .select_lang {
+                  select {
+                    font-size: 12px;
+                    option {
+                      background: #005440;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .hero {
+        .hero_items {
+          .hero_image {
+            display: block;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 576px) {
   .majburiy {
     position: relative;

@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 
 // Images \\
 import logo from "../../assets/images/Logo (1).svg";
-import heroImage from "../../assets/images/hero_img.svg";
 import heroImageNew from "../../assets/images/cutted.png";
 
 // Icons \\
@@ -102,7 +101,6 @@ const Majbury = () => {
                       <BsArrowLeft /> Bog'lanish
                     </Link>
                   </div>
-
                   <div className="hero_image">
                     <img src={heroImageNew} alt="heroImage" />
                   </div>

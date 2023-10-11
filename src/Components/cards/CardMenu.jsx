@@ -1,34 +1,16 @@
-import { React, useState } from "react";
+import { React } from "react";
 import { Link, NavLink } from "react-router-dom";
+import Glider from "react-glider";
+import "glider-js/glider.min.css";
 
 // Icons \\
-import { IoIosArrowDropleft } from "react-icons/io";
-import { IoIosArrowDropright } from "react-icons/io";
+// import { IoIosArrowDropleft } from "react-icons/io";
+// import { IoIosArrowDropright } from "react-icons/io";
 
 // Styles \\
 import "../../assets/styles/cards/cardMenu.scss";
 
-// Images \\
-import menuImg from "../../assets/images/menu_img.svg";
-
-// Slider \\
-
 const CardMenu = () => {
-
-
-  // const [currentItems, setCurrentItems] = useState(0);
-
-  // const goToPrevious = () => {
-  //   setCurrentItems((prevIndex) =>
-  //     prevIndex === 0 ? images.length - 1 : prevIndex - 1
-  //   );
-  // };
-  // const goToNext = () => {
-  //   setCurrentItems((prevIndex) =>
-  //     prevIndex === 0 ? images.length - 1 : prevIndex + 1
-  //   );
-  // };
-
   return (
     // <div className="cardMenu">
     //   <div className="cardMenu_items">
@@ -167,6 +149,155 @@ const CardMenu = () => {
         <div className="row">
           <div className="ag-format-container">
             <div className="ag-courses_box">
+              {/* <Glider
+                className="glider-container"
+                draggable
+                hasDots
+                slidesToShow={1}
+                scrollLock
+              >
+                <div>
+                  <span className="flex">
+                    <div className="ag-courses_item">
+                      <Link className="ag-courses-item_link">
+                        <div className="ag-courses-item_bg"></div>
+
+                        <div className="ag-courses-item_title">Osago</div>
+
+                        <NavLink to={"osago"}>
+                          <span className="ag-courses-item_date text-white flex items-center z-10 relative">
+                            Boshlash{" "}
+                            <i className="fa-solid fa-arrow-right-long ms-3"></i>
+                          </span>
+                        </NavLink>
+                      </Link>
+                    </div>
+                    <div className="ag-courses_item">
+                      <Link className="ag-courses-item_link">
+                        <div className="ag-courses-item_bg"></div>
+
+                        <div className="ag-courses-item_title">Osago</div>
+
+                        <NavLink to={"osago"}>
+                          <span className="ag-courses-item_date text-white flex items-center z-10 relative">
+                            Boshlash{" "}
+                            <i className="fa-solid fa-arrow-right-long ms-3"></i>
+                          </span>
+                        </NavLink>
+                      </Link>
+                    </div>
+                  </span>
+                </div>
+                <div>
+                  <span className="flex">
+                    <div className="ag-courses_item">
+                      <Link className="ag-courses-item_link">
+                        <div className="ag-courses-item_bg"></div>
+
+                        <div className="ag-courses-item_title">
+                          Baxtsiz hodisa
+                        </div>
+
+                        <div className="ag-courses-item_date-box">
+                          <span className="ag-courses-item_date text-white flex items-center">
+                            Boshlash{" "}
+                            <i className="fa-solid fa-arrow-right-long ms-3"></i>
+                          </span>
+                        </div>
+                      </Link>
+                    </div>
+                    <div className="ag-courses_item">
+                      <Link className="ag-courses-item_link">
+                        <div className="ag-courses-item_bg"></div>
+
+                        <div className="ag-courses-item_title">
+                          Baxtsiz hodisa
+                        </div>
+
+                        <div className="ag-courses-item_date-box">
+                          <span className="ag-courses-item_date text-white flex items-center">
+                            Boshlash{" "}
+                            <i className="fa-solid fa-arrow-right-long ms-3"></i>
+                          </span>
+                        </div>
+                      </Link>
+                    </div>
+                  </span>
+                </div>
+                <div>
+                  <span className="flex">
+                    <div className="ag-courses_item">
+                      <Link className="ag-courses-item_link">
+                        <div className="ag-courses-item_bg"></div>
+
+                        <div className="ag-courses-item_title">
+                          Baxtsiz hodisa
+                        </div>
+
+                        <div className="ag-courses-item_date-box">
+                          <span className="ag-courses-item_date text-white flex items-center">
+                            Boshlash{" "}
+                            <i className="fa-solid fa-arrow-right-long ms-3"></i>
+                          </span>
+                        </div>
+                      </Link>
+                    </div>
+                    <div className="ag-courses_item">
+                      <Link className="ag-courses-item_link">
+                        <div className="ag-courses-item_bg"></div>
+
+                        <div className="ag-courses-item_title">
+                          Baxtsiz hodisa
+                        </div>
+
+                        <div className="ag-courses-item_date-box">
+                          <span className="ag-courses-item_date text-white flex items-center">
+                            Boshlash{" "}
+                            <i className="fa-solid fa-arrow-right-long ms-3"></i>
+                          </span>
+                        </div>
+                      </Link>
+                    </div>
+                  </span>
+                </div>
+                <div>
+                  <span className="flex">
+                    <div className="ag-courses_item">
+                      <Link className="ag-courses-item_link">
+                        <div className="ag-courses-item_bg"></div>
+
+                        <div className="ag-courses-item_title">
+                          Baxtsiz hodisa
+                        </div>
+
+                        <div className="ag-courses-item_date-box">
+                          <span className="ag-courses-item_date text-white flex items-center">
+                            Boshlash{" "}
+                            <i className="fa-solid fa-arrow-right-long ms-3"></i>
+                          </span>
+                        </div>
+                      </Link>
+                    </div>
+                    <div className="ag-courses_item">
+                      <Link className="ag-courses-item_link">
+                        <div className="ag-courses-item_bg"></div>
+
+                        <div className="ag-courses-item_title">
+                          Baxtsiz hodisa
+                        </div>
+
+                        <div className="ag-courses-item_date-box">
+                          <span className="ag-courses-item_date text-white flex items-center">
+                            Boshlash{" "}
+                            <i className="fa-solid fa-arrow-right-long ms-3"></i>
+                          </span>
+                        </div>
+                      </Link>
+                    </div>
+                  </span>
+                </div>
+              </Glider> */}
+
               <div className="ag-courses_item">
                 <Link className="ag-courses-item_link">
                   <div className="ag-courses-item_bg"></div>
@@ -175,7 +306,8 @@ const CardMenu = () => {
 
                   <NavLink to={"osago"}>
                     <span className="ag-courses-item_date text-white flex items-center z-10 relative">
-                      Boshlash <i className="fa-solid fa-arrow-right-long ms-3"></i>
+                      Boshlash{" "}
+                      <i className="fa-solid fa-arrow-right-long ms-3"></i>
                     </span>
                   </NavLink>
                 </Link>
@@ -189,23 +321,16 @@ const CardMenu = () => {
 
                   <div className="ag-courses-item_date-box">
                     <span className="ag-courses-item_date text-white flex items-center">
-                      Boshlash <i className="fa-solid fa-arrow-right-long ms-3"></i>
+                      Boshlash{" "}
+                      <i className="fa-solid fa-arrow-right-long ms-3"></i>
                     </span>
                   </div>
                 </Link>
               </div>
-              
-           
             </div>
           </div>
         </div>
       </section>
-{/* 
-      <div className=" flex">
-        <button onClick={goToPrevious}>Previous</button>
-        <img src={images[currentItems]} alt="Carousel" />
-        <button onClick={goToNext}>Next</button>
-      </div> */}
     </div>
   );
 };
