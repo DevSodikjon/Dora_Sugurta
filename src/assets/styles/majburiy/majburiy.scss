@@ -1,6 +1,6 @@
 .majburiy {
   background: url("../../images/hero_img.svg");
-  background-color: #005440;
+  background-color: #068869;
   background-repeat: no-repeat;
   background-position: 460px 55px;
   background-size: 1000px;
@@ -52,6 +52,11 @@
                   font-style: normal;
                   font-weight: 700;
                   line-height: normal;
+                  transition: all 0.3s ease-in-out;
+                }
+                .login_btn:hover {
+                  transition: all 0.3s ease-in-out;
+                  background: #005440;
                 }
               }
 
@@ -98,6 +103,16 @@
             font-style: normal;
             font-weight: 400;
             line-height: 27.261px;
+            transition: all 0.3s ease-in-out;
+          }
+
+          .new:hover {
+            background: #000;
+            transition: all 0.3s ease-in-out;
+          }
+
+          .newMobile {
+            display: none;
           }
           h2 {
             margin: 22px 0px;
@@ -133,13 +148,27 @@
           font-style: normal;
           font-weight: 600;
           line-height: 27.261px;
+          transition: all 0.3s ease-in-out;
 
           .arrow-icon {
             font-size: 19px;
           }
         }
+
+        .buy:hover {
+          transition: all 0.3s ease-in-out;
+          background: #005440;
+          color: #fff;
+        }
+
+        .hero_image {
+          display: none;
+        }
       }
     }
+  }
+  .navModal_bg {
+    display: none;
   }
 }
 
@@ -163,6 +192,9 @@
               .burgerIcon {
                 font-size: 30px;
                 color: #fff;
+              }
+              .burgerIcon:hover {
+                color: #ff8008;
               }
             }
             .header_mobile_items_icon:hover {
@@ -189,6 +221,10 @@
                 display: inline;
                 font-size: 16.174px;
               }
+
+              .newMobile:hover {
+                background: #000;
+              }
               .desc {
                 margin-top: 20px;
                 font-size: 17.174px;
@@ -206,14 +242,22 @@
                 font-style: normal;
                 font-weight: 600;
                 line-height: 27.261px;
+                transition: all 0.3s ease-in-out;
 
                 .arrow-icon {
                   font-size: 19px;
                 }
               }
+
+              .buy:hover {
+                transition: all 0.3s ease-in-out;
+                background: #005440;
+                color: #fff;
+              }
             }
 
             .hero_image {
+              display: block;
               img {
                 width: 500px;
               }
@@ -223,82 +267,95 @@
       }
     }
 
-    .navModal {
-      width: 70%;
+    .navModal_bg {
+      width: 100%;
+      background: #00000076;
+      display: block;
       position: fixed;
       z-index: 11;
       top: 0px;
       right: -1000px;
-      background: #fff;
-      padding: 60px 30px 100px 30px;
-      border-bottom-left-radius: 15px;
       transition: all 0.5s ease-in-out;
+      .navModal {
+        float: right;
+        width: 70%;
+        background: #fff;
+        padding: 60px 30px 100px 30px;
+        border-bottom-left-radius: 15px;
 
-      .closeIcon {
-        font-size: 35px;
-        color: #005440;
-      }
+        .closeIcon {
+          font-size: 35px;
+          color: #005440;
+        }
 
-      .closeIcon:hover {
-        cursor: pointer;
-        transform: rotate(90deg);
-        transition: all 0.2s ease-in-out;
-        color: red;
-      }
-      ul {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-        margin-bottom: 24px;
-        li {
-          list-style: none;
+        .closeIcon:hover {
+          cursor: pointer;
+          transform: rotate(90deg);
+          transition: all 0.2s ease-in-out;
+          color: red;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+          margin-bottom: 24px;
+          li {
+            list-style: none;
 
-          .anchor {
-            padding: 8px 12px;
-            border-radius: 10px;
-            color: #005440;
-            font-family: Inter;
-            font-size: 30px;
-            font-style: normal;
-            font-weight: 800;
-            line-height: 24px;
-            transition: all 1px ease-in-out;
-          }
+            .anchor {
+              padding: 8px 12px;
+              border-radius: 10px;
+              color: #005440;
+              font-family: Inter;
+              font-size: 30px;
+              font-style: normal;
+              font-weight: 800;
+              line-height: 24px;
+              transition: all 1px ease-in-out;
+            }
 
-          .anchor:hover {
-            transition: all 0.3s ease-in-out;
-            background: #005440;
-            color: #fff;
+            .anchor:hover {
+              transition: all 0.3s ease-in-out;
+              background: #005440;
+              color: #fff;
+            }
           }
         }
-      }
 
-      .login {
-        .login_btn {
-          display: block;
-          padding: 12px 0px;
-          text-align: center;
-          border-radius: 4px;
-          background: #005440;
-          color: #ff8008;
-          font-family: Roboto;
-          font-size: 24px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
-        }
-        .select_lang {
-          margin-bottom: 100px;
-          select {
+        .login {
+          .login_btn {
+            display: block;
+            padding: 12px 0px;
+            text-align: center;
             border-radius: 4px;
-            border: 1px solid #005440;
-            padding: 10px;
-            color: #005440;
+            background: #005440;
+            color: #ff8008;
             font-family: Roboto;
             font-size: 24px;
             font-style: normal;
-            font-weight: 400;
+            font-weight: 700;
             line-height: normal;
+            border: 1px solid #005440;
+            transition: all 0.3s ease-in-out;
+          }
+
+          .login_btn:hover {
+            transition: all 0.3s ease-in-out;
+            background: white;
+          }
+          .select_lang {
+            margin-bottom: 100px;
+            select {
+              border-radius: 4px;
+              border: 1px solid #005440;
+              padding: 10px;
+              color: #005440;
+              font-family: Roboto;
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+            }
           }
         }
       }

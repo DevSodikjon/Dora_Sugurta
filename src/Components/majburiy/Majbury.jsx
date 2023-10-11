@@ -73,7 +73,9 @@ const Majbury = () => {
             <div className="header_mobile pt-6">
               <div className="header_mobile_items">
                 <div className="header_mobile_items_logo">
-                  <img src={logo} alt="logo" />
+                  <Link>
+                    <img src={logo} alt="logo" />
+                  </Link>
                 </div>
 
                 <div className="header_mobile_items_icon">
@@ -115,45 +117,47 @@ const Majbury = () => {
         </div>
       </div>
 
-      <div className={`navModal ${active ? "active" : ""}`}>
-        <div className="header_item_navbar">
-          <div className="navbar">
-            <div className="icon_X float-right">
-              <RiCloseCircleFill className="closeIcon" onClick={openModal} />
-            </div>
-
-            <ul>
-              <li>
-                <Link className="anchor">Asosiy</Link>
-              </li>
-              <hr className="hr_line text-[#005440]" />
-              <li>
-                <Link className="anchor">Biz haqimizda</Link>
-              </li>
-              <hr className="hr_line" />
-              <li>
-                <Link className="anchor">Xizmatlar</Link>
-              </li>
-              <hr className="hr_line" />
-              <li>
-                <Link className="anchor">Yangiliklar</Link>
-              </li>
-              <hr className="hr_line" />
-              <li>
-                <Link className="anchor">Aloqa</Link>
-              </li>
-              <hr className="hr_line" />
-            </ul>
-
-            <div className="login">
-              <div className="select_lang">
-                <select>
-                  <option value="0">UZ</option>
-                  <option value="1">RUS</option>
-                  <option value="1">ENG</option>
-                </select>
+      <div className={`navModal_bg ${active ? "active" : ""}`}>
+        <div className={`navModal`}>
+          <div className="header_item_navbar">
+            <div className="navbar">
+              <div className="icon_X float-right">
+                <RiCloseCircleFill className="closeIcon" onClick={openModal} />
               </div>
-              <Link className="login_btn">Kirish</Link>
+
+              <ul>
+                <li>
+                  <Link className="anchor">Asosiy</Link>
+                </li>
+                <hr className="hr_line text-[#005440]" />
+                <li>
+                  <Link className="anchor">Biz haqimizda</Link>
+                </li>
+                <hr className="hr_line" />
+                <li>
+                  <Link className="anchor">Xizmatlar</Link>
+                </li>
+                <hr className="hr_line" />
+                <li>
+                  <Link className="anchor">Yangiliklar</Link>
+                </li>
+                <hr className="hr_line" />
+                <li>
+                  <Link className="anchor">Aloqa</Link>
+                </li>
+                <hr className="hr_line" />
+              </ul>
+
+              <div className="login">
+                <div className="select_lang">
+                  <select>
+                    <option value="0">UZ</option>
+                    <option value="1">RUS</option>
+                    <option value="1">ENG</option>
+                  </select>
+                </div>
+                <Link className="login_btn">Kirish</Link>
+              </div>
             </div>
           </div>
         </div>
